@@ -9,7 +9,7 @@ public:
     Tracked(const T&&);
     Tracked& operator=(const T&);
     Tracked& operator=(const T&&);
-    operator T();
+    operator T() const;
 private:
     T current_value;
     T last_value;
